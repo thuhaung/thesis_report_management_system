@@ -22,7 +22,7 @@
 
 This project develops an event-driven system that allows for submission, storage and evaluation of undergraduate thesis reports in accordance with the guidelines provided by International University in Ho Chi Minh City, Vietnam.
 
-By implementing Natural Language Processing techniques, the system generates relatively quick and accurate evaluation that encourages students to revise and improve their reports, as well as acts a grading checkpoint that help instructors make informed decisions. 
+By implementing Natural Language Processing techniques, this system generates relatively quick and accurate evaluation that encourages students to revise and improve their reports, as well as acts a grading checkpoint that helps instructors make informed decisions. 
 
 The event-driven microservices architecture in combination with cloud storage ensures ease of maintainability and scalability of the system, with room for more extensive evaluation services to be implemented in the future. 
 
