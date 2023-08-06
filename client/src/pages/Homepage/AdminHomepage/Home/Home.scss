@@ -1,0 +1,213 @@
+.home {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    .sub-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 4px;
+        border: 1px solid #bbb;
+        padding: 30px 40px 40px;
+        gap: 20px;
+        .title {
+            width: 100%;
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 42px;
+            color: #000;
+        }
+        .info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .info-section {
+                width: 100%;
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: #000;
+            }
+        }
+        .picker {
+            display: none;
+            justify-content: flex-start;
+            gap: 10px;
+            align-items: center;
+            .close {
+                font-family: "Inter";
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 400;
+                color: #000;
+                cursor: pointer;
+                transform: scaleX(1.2);
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+            .submit {
+                text-align: center;
+                font-family: "Inter";
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 400;
+                color: #000;
+                cursor: pointer;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+            &.active {
+                display: flex;
+            }
+        }
+        .notifications {
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #2C3591;
+            }
+            .item {
+                width: 100%;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                padding: 10px 20px 20px;
+                background: rgb(220, 238, 255);
+                .title {
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: #000;
+                }
+                .content {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    color: #000;
+                }
+                .submitted-time {
+                    margin-top: 15px;
+                    font-family: "Inter";
+                    font-size: 14px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    color: #000;
+                }
+            }
+        }
+        .warning {
+            width: 100%;
+            margin: -5px 0 -10px;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 600;
+            color: rgb(203, 10, 10);
+        }
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            align-items: center;
+            .button {
+                text-align: center;
+                border-radius: 4px;
+                padding: 10px 40px;
+                font-family: "Inter";
+                font-size: 18px;
+                line-height: 30px;
+                text-decoration: none;
+                font-weight: 400;
+                background: #2C3591;
+                cursor: pointer;
+                color: #fff;
+                &:hover {
+                    background: #242b77;
+                }
+            }
+        }
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .form-section {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                .form-label {
+                    font-family: "Inter";
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #000;
+                }
+                textarea {
+                    max-width: 100%;
+                    min-width: 100%;
+                    min-height: 100px;
+                    max-height: 200px;
+                }
+                .form-input {
+                    width: 100%;
+                    outline: none;
+                    border-radius: 4px;
+                    border: 1px solid #bbb;
+                    padding: 8px 12px;
+                    font-family: "Inter";
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #000;
+                }
+            }
+            .submit {
+                align-self: center;
+                text-align: center;
+                border-radius: 4px;
+                padding: 10px 40px;
+                font-family: "Inter";
+                font-size: 18px;
+                line-height: 30px;
+                text-decoration: none;
+                font-weight: 400;
+                background: #2C3591;
+                cursor: pointer;
+                color: #fff;
+                &:hover {
+                    background: #242b77;
+                }
+            }
+        }
+    }
+}

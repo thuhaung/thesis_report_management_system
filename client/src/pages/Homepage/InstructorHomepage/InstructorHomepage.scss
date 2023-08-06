@@ -1,0 +1,94 @@
+.instructor-homepage {
+    width: 100%;
+    padding: 100px 0;
+    .header {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .title {
+            width: 100%;
+            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 42px;
+            color: #000;
+            line-height: 60px;
+            text-align: center;
+        }
+        .deadline {
+            width: 100%;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 36px;
+            color: #000;
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+    .main-section {
+        width: 90%;
+        max-width: 800px;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        .info {
+            width: 100%;
+            font-family: "Inter";
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: 400;
+            color: #000;
+        }
+        .submissions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .submission {
+                width: 100%;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 25px;
+                border-radius: 4px;
+                background: rgb(220, 238, 255);
+                border: 1px solid rgb(220, 238, 255);
+                cursor: pointer;
+                &:hover {
+                    border-color:  #2C3591;
+                }
+                .title {
+                    font-family: "Roboto";
+                    font-weight: 500;
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 34px;
+                    color: #000;
+                }
+                .author {
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #000;
+                }
+                .submitted-time {
+                    margin-top: 20px;
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 28px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

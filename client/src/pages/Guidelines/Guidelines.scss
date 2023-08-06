@@ -1,0 +1,80 @@
+.guidelines {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    .header {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+            width: 100%;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 32px;
+            line-height: 50px;
+            font-weight: 700;
+            color: #000;
+        }
+        .description {
+            width: 100%;
+            text-align: center;
+            font-family: "Inter";
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+    .main-section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 70px auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .categories {
+            width: 28%;
+            padding: 15px;
+            background: rgb(220, 238, 255);
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            .category {
+                width: 100%;
+                padding: 8px 12px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                font-family: "Inter";
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                color: #000;
+                &:hover {
+                    background: rgb(201, 221, 255);
+                    font-weight: 600;
+                }
+                &.active {
+                    background: rgb(201, 221, 255);
+                    font-weight: 600;
+                }
+            }
+        }
+        .content {
+            width: 68%;
+            white-space: pre-wrap;
+            font-family: "Inter";
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.notification {
+    width: 300px;
+    background: transparent;
+    position: fixed;
+    z-index: 0;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    .notification-list {
+        width: 100%;
+        position: relative;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        padding: 8px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        overflow-y: auto;
+        max-height: 0;
+        opacity: 0;
+        z-index: -5;
+        transition: .3 ease;
+        &.active {
+            opacity: 1;
+            z-index: 1;
+            max-height: 200px;
+        }
+        .close {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-family: "Inter";
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #bedfff;
+        }
+        .item {
+            width: 100%;
+            position: relative;
+            background: #dbedff;
+            display: flex;
+            padding: 8px;
+            border-radius: 4px;
+            flex-direction: column;
+            align-items: flex-start;
+            .title {
+                font-family: "Inter";
+                font-size: 14px;
+                line-height: 28px;
+                color: #000;
+                font-weight: 400;
+            }
+            .content {
+                margin-top: 5px;
+                font-family: "Inter";
+                font-size: 12px;
+                line-height: 28px;
+                color: #000;
+                font-weight: 400;
+            }
+            .submitted-time {
+                margin-top: 10px;
+                font-family: "Inter";
+                font-size: 12px;
+                line-height: 24px;
+                color: #000;
+                font-weight: 400;
+            }
+        }
+    }
+    .notification-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: rgb(255, 255, 255);
+        border: 1px solid #bbb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            background: #dddddd;
+        }
+        img {
+            width: 25px;
+            height: 32px;
+            z-index: 1;
+        }
+        &.active {
+            &::after {
+                content: "";
+                z-index: 2;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: rgb(181, 0, 0);
+                top: -2px;
+                right: 6px;
+            }
+        }
+    }
+}
