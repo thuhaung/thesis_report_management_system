@@ -100,6 +100,7 @@ Examples:
 - Admin ID: ITITADMIN01
 
 ![Alt text](/readme_images/login.png)
+
 Provide inputs to the thesis submission form. An example thesis <a>/Thesis.pdf</a> is provided for testing purposes.
 
 ![Alt text](/readme_images/submission_form.png)
