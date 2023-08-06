@@ -70,7 +70,7 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 1. Clone the repository.
 ```sh
-git clone https://github.com/thuhaung/thesis_management_system.git
+git clone https://github.com/thuhaung/thesis_report_management_system.git
 ```
 2. Create a Google Cloud Storage bucket named <a>thesis_file_bucket</a>.
 3. Upload the <a>requirements</a> folder to this bucket.
