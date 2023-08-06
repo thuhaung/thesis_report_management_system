@@ -1,0 +1,5 @@
+pika
+psycopg2
+pdfplumber
+python-dotenv
+google-cloud-storage

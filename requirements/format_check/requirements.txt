@@ -1,0 +1,3 @@
+Title formatting guidelines:
+Chapter titles: bold, size 14. Example: Chapter 1 Introduction
+Main section titles: bold, size 13. Example: 1.1 Background

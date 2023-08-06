@@ -1,0 +1,7 @@
+pika
+sumy
+numpy
+psycopg2
+pdfplumber
+python-dotenv
+google-cloud-storage
